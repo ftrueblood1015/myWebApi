@@ -1,8 +1,10 @@
-﻿using System;
+﻿using myWebApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 
 namespace myWebApi.Data
@@ -26,7 +28,7 @@ namespace myWebApi.Data
         {
             get
             {
-                return "localhost;Integrated Security=True";
+                return "localhost;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             }
         }
     }
